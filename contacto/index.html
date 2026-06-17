@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto — XYZ por Viviana Bautista.">
+  <title>Contacto — XYZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <style>
+    .contact-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-hero {
+      padding: 9rem 0 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 300;
+      margin-bottom: 1rem;
+      line-height: 0.95;
+    }
+
+    .contact-sub {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      max-width: 420px;
+      line-height: 1.85;
+    }
+
+    .contact-main {
+      padding: 5rem 0;
+      flex: 1;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s6);
+    }
+
+    .contact-form-wrap h2,
+    .contact-links-wrap h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    .contact-input,
+    .contact-textarea {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 0.75rem 0;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 0.88rem;
+      margin-bottom: 1.8rem;
+      outline: none;
+      transition: border-color var(--ease);
+      display: block;
+    }
+
+    .contact-input:focus,
+    .contact-textarea:focus {
+      border-bottom-color: rgba(255,255,255,0.4);
+    }
+
+    .contact-input::placeholder,
+    .contact-textarea::placeholder {
+      color: rgba(255,255,255,0.2);
+      font-size: 0.82rem;
+    }
+
+    .contact-textarea { min-height: 90px; resize: vertical; }
+
+    .contact-btn {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 0.72rem 1.8rem;
+      font-family: var(--font-body);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: all var(--ease);
+    }
+
+    .contact-btn:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.55);
+    }
+
+    .contact-link-group {
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-link-group-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 1rem;
+    }
+
+    .contact-link-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .contact-link-list a {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: color var(--ease);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .contact-link-list a:hover { color: var(--text); }
+
+    .contact-link-list a::before {
+      content: '·';
+      color: var(--text-subtle);
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+  </style>
+</head>
+<body class="contact-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="/" class="nav-logo">XYZ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/constelaciones/" class="nav-link">Constelaciones</a>
+      <a href="/habitat/" class="nav-link">Hábitat</a>
+      <a href="/informatica/" class="nav-link">Informática</a>
+      <a href="/gira-nada/" class="nav-link">Gira Nada</a>
+      <a href="/contacto/" class="nav-link active">Contacto</a>
+    </div>
+  </nav>
+
+  <header class="contact-hero">
+    <div class="container">
+      <h1 class="contact-title">Contacto</h1>
+      <p class="contact-sub">
+        Cada mensaje es una constelación que se forma.
+        Escríbeme sobre lo que sea — desde lo que seas.
+      </p>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-form-wrap">
+          <h2>Enviar un mensaje</h2>
+          <input type="text"  class="contact-input"    placeholder="Nombre">
+          <input type="email" class="contact-input"    placeholder="Correo electrónico">
+          <select class="contact-input" style="appearance: none; cursor: pointer;">
+            <option value="" disabled selected style="background:#000">Dimensión de interés</option>
+            <option value="constelaciones">Constelaciones</option>
+            <option value="habitat">Hábitat</option>
+            <option value="informatica">Informática</option>
+            <option value="giranada">Gira Nada</option>
+            <option value="general">General · XYZ</option>
+          </select>
+          <textarea class="contact-textarea" placeholder="Tu mensaje"></textarea>
+          <button class="contact-btn" type="button">Enviar</button>
+        </div>
+
+        <div class="contact-links-wrap">
+          <h2>Redes y canales</h2>
+
+          <div class="contact-link-group">
+            <p class="contact-link-group-label">XYZ — Principal</p>
+            <ul class="contact-link-list">
+              <li><a href="https://www.instagram.com/vivianabautista.xyz/" target="_blank" rel="noopener">@vivianabautista.xyz</a></li>
+              <li><a href="https://www.youtube.com/@vivianabautistaxyz" target="_blank" rel="noopener">YouTube · XYZ</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-link-group">
+            <p class="contact-link-group-label">Constelaciones</p>
+            <ul class="contact-link-list">
+              <li><a href="https://www.instagram.com/xyz.constelaciones/" target="_blank" rel="noopener">@xyz.constelaciones</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-link-group">
+            <p class="contact-link-group-label">Hábitat</p>
+            <ul class="contact-link-list">
+              <li><a href="https://www.instagram.com/xyz.habitat/" target="_blank" rel="noopener">@xyz.habitat</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-link-group">
+            <p class="contact-link-group-label">Informática</p>
+            <ul class="contact-link-list">
+              <li><a href="https://www.instagram.com/xyz.informatica/" target="_blank" rel="noopener">@xyz.informatica</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-link-group">
+            <p class="contact-link-group-label">Gira Nada</p>
+            <ul class="contact-link-list">
+              <li><a href="https://www.instagram.com/xyz.bitacora/" target="_blank" rel="noopener">@xyz.bitacora (Instagram)</a></li>
+              <li><a href="https://www.youtube.com/@xyz.giroestelar" target="_blank" rel="noopener">@xyz.giroestelar (YouTube)</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-xyz">XYZ</p>
+      <p class="footer-copy">© 2025 Viviana Bautista</p>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

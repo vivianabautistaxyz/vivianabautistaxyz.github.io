@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informática — datos, análisis y sistemas. Una dimensión de XYZ por Viviana Bautista.">
+  <title>Informática — XYZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dimension.css">
+  <style>
+    body { background: var(--informatica-bg); }
+
+    .dim-hero-bg {
+      background:
+        radial-gradient(ellipse 70% 50% at 70% 30%, rgba(30,58,95,0.5) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 60% at 10% 80%, rgba(96,165,250,0.06) 0%, transparent 60%);
+    }
+
+    .dim-hero-title { color: #dbeafe; }
+
+    .dim-rule { background: var(--informatica-light); }
+
+    .dim-btn:hover,
+    .dim-social:hover { border-color: var(--informatica-light); }
+
+    /* Grid sutil estilo interfaz */
+    .dim-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 47px, rgba(96,165,250,0.03) 48px),
+        repeating-linear-gradient(90deg, transparent, transparent 47px, rgba(96,165,250,0.03) 48px);
+      pointer-events: none;
+    }
+
+    .skill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .skill-tag {
+      font-family: 'Inter', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(96,165,250,0.2);
+      padding: 0.3rem 0.8rem;
+      color: rgba(96,165,250,0.6);
+      background: rgba(96,165,250,0.04);
+    }
+  </style>
+</head>
+<body class="dim-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="/" class="nav-logo">XYZ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/constelaciones/" class="nav-link">Constelaciones</a>
+      <a href="/habitat/" class="nav-link">Hábitat</a>
+      <a href="/informatica/" class="nav-link active">Informática</a>
+      <a href="/gira-nada/" class="nav-link">Gira Nada</a>
+      <a href="/contacto/" class="nav-link">Contacto</a>
+    </div>
+  </nav>
+
+  <section class="dim-hero">
+    <div class="dim-hero-bg"></div>
+    <div class="container">
+      <a href="/" class="dim-back">← XYZ</a>
+      <p class="dim-hero-num">Dimensión 03</p>
+      <h1 class="dim-hero-title">Informática</h1>
+      <p class="dim-hero-subtitle">Datos y Sistemas</p>
+      <p class="dim-hero-desc">
+        Los datos son el lenguaje que el mundo contemporáneo usa para describirse a sí mismo.
+        Aprendo a leerlo, a construirlo y a cuestionarlo —
+        porque detrás de cada dataset hay una decisión humana.
+      </p>
+      <div class="dim-tags">
+        <span class="dim-tag">Análisis de datos</span>
+        <span class="dim-tag">Programación</span>
+        <span class="dim-tag">Sistemas complejos</span>
+        <span class="dim-tag">Visualización</span>
+        <span class="dim-tag">Patrones</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="dim-section" style="background: var(--informatica-bg);">
+      <div class="container">
+        <hr class="dim-rule">
+        <h2 class="dim-section-title">Capacidades</h2>
+        <p class="dim-section-text">
+          Mi trabajo con datos va más allá del código. Creo que la manera en que
+          analizamos información revela nuestras preguntas —
+          y las preguntas revelan nuestra cosmovisión.
+        </p>
+        <div class="skill-grid">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Visualización de datos</span>
+          <span class="skill-tag">GIS / Datos espaciales</span>
+          <span class="skill-tag">Estadística</span>
+          <span class="skill-tag">Web scraping</span>
+          <span class="skill-tag">Ingeniería catastral</span>
+        </div>
+        <div class="dim-socials" style="margin-top: 2rem;">
+          <a href="https://www.instagram.com/xyz.informatica/" target="_blank" rel="noopener noreferrer" class="dim-social">
+            Instagram ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dim-section" style="background: var(--informatica-bg);">
+      <div class="container">
+        <h2 class="dim-section-title">Proyectos</h2>
+        <div class="dim-projects-grid">
+          <div class="dim-project-card">
+            <p class="dim-project-title">Análisis espacial urbano</p>
+            <p class="dim-project-meta">Investigación · 2024</p>
+            <p class="dim-project-desc">
+              Lectura de patrones urbanos usando datos catastrales y SIG.
+              Cómo la ciudad cuenta su historia a través de sus mapas.
+            </p>
+          </div>
+          <div class="dim-project-card">
+            <p class="dim-project-title">Visualización de redes</p>
+            <p class="dim-project-meta">Exploración · 2025</p>
+            <p class="dim-project-desc">
+              Representación visual de sistemas complejos y sus conexiones.
+              Dónde los datos se vuelven imagen.
+            </p>
+          </div>
+          <div class="dim-project-card">
+            <p class="dim-project-title">Próximamente</p>
+            <p class="dim-project-meta">En construcción</p>
+            <p class="dim-project-desc">
+              Nuevos proyectos en el cruce entre tecnología, territorio
+              y sistemas humanos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dim-section" style="background: var(--informatica-bg);">
+      <div class="container">
+        <h2 class="dim-section-title">Experiencia</h2>
+        <p class="dim-section-text" style="margin-bottom: 2rem;">
+          Formación en ingeniería catastral y geodesia. Trabajo en el cruce entre
+          territorio, datos espaciales y sistemas de información geográfica.
+        </p>
+        <a href="/contacto/" class="dim-social" style="display: inline-flex;">
+          Descargar CV ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" style="background: var(--informatica-bg);">
+    <div class="container">
+      <p class="footer-xyz">XYZ</p>
+      <p class="footer-copy">© 2025 Viviana Bautista</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/xyz.informatica/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

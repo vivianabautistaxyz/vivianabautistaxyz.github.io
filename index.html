@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XYZ es el sistema de referencia desde el cual Viviana Bautista observa, interpreta y habita el mundo.">
+  <title>XYZ — Viviana Bautista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="home">
+
+  <!-- Navegación -->
+  <nav class="nav" id="nav" aria-label="Navegación principal">
+    <a href="/" class="nav-logo" aria-label="XYZ — Inicio">XYZ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks" role="menubar">
+      <a href="/constelaciones/" class="nav-link" data-dim="constelaciones">Constelaciones</a>
+      <a href="/habitat/" class="nav-link" data-dim="habitat">Hábitat</a>
+      <a href="/informatica/" class="nav-link" data-dim="informatica">Informática</a>
+      <a href="/gira-nada/" class="nav-link" data-dim="giranada">Gira Nada</a>
+      <a href="/contacto/" class="nav-link">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Canvas cosmos (fondo fijo) -->
+  <canvas id="cosmos" aria-hidden="true"></canvas>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" aria-label="Presentación">
+    <div class="hero-content">
+      <div class="hero-identity" id="heroIdentity">
+        <h1 class="hero-xyz">XYZ</h1>
+        <p class="hero-name">Viviana Bautista</p>
+      </div>
+      <p class="hero-tagline" id="heroTagline">
+        Sistema de referencia desde el cual<br>
+        observo, interpreto y habito el mundo.
+      </p>
+    </div>
+    <a href="#sobre-xyz" class="scroll-cue" aria-label="Continuar explorando">
+      <span class="scroll-cue-label">Explorar</span>
+      <span class="scroll-cue-line"></span>
+    </a>
+    <div class="hero-fade" aria-hidden="true"></div>
+  </section>
+
+  <!-- Sobre XYZ -->
+  <section class="content-section" id="sobre-xyz" aria-label="Qué es XYZ">
+    <div class="container">
+      <div class="section-label">¿Qué es XYZ?</div>
+      <blockquote class="xyz-quote">
+        "Somos co-creadores del universo.<br>
+        Tenemos la capacidad de habitar<br>
+        el mundo que queremos."
+      </blockquote>
+      <p class="xyz-description">
+        XYZ no es un portafolio ni una empresa. Es un sistema de referencia —
+        el espacio desde el cual observo, interpreto y construyo. Como el plano
+        cartesiano necesita ejes para orientarse, yo necesito coordenadas para
+        leer el mundo. Estas son las mías.
+      </p>
+      <p class="xyz-note">
+        Un sistema en construcción permanente.<br>
+        No una respuesta — sino el espacio donde habitan las preguntas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Principios -->
+  <section class="content-section" id="principios" aria-label="Principios">
+    <div class="container">
+      <div class="section-label">Principios</div>
+      <ol class="principios-list" role="list">
+        <li class="principio-item">
+          <span class="principio-num">01</span>
+          <div>
+            <strong class="principio-titulo">Habitar el silencio</strong>
+            <p class="principio-desc">El silencio no es vacío. Es el primer lenguaje.</p>
+          </div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">02</span>
+          <div>
+            <strong class="principio-titulo">Construir con intención</strong>
+            <p class="principio-desc">La vida que se desea se construye acto a acto.</p>
+          </div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">03</span>
+          <div>
+            <strong class="principio-titulo">Confiar en el amor</strong>
+            <p class="principio-desc">La fe no es certeza. Es orientación.</p>
+          </div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">04</span>
+          <div>
+            <strong class="principio-titulo">Los vínculos son el mapa</strong>
+            <p class="principio-desc">No somos islas. Somos redes.</p>
+          </div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">05</span>
+          <div>
+            <strong class="principio-titulo">Hacer con amor</strong>
+            <p class="principio-desc">La calidad de la atención transforma la materia.</p>
+          </div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">06</span>
+          <div>
+            <strong class="principio-titulo">Respetar los procesos</strong>
+            <p class="principio-desc">El tiempo tiene su propia inteligencia.</p>
+          </div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">07</span>
+          <div>
+            <strong class="principio-titulo">Observar para transformar</strong>
+            <p class="principio-desc">Lo que se ve con claridad puede cambiarse.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Dimensiones -->
+  <section class="content-section" id="dimensiones" aria-label="Las manifestaciones">
+    <div class="container">
+      <div class="section-label">Las manifestaciones</div>
+      <p class="dimensiones-intro">
+        Desde XYZ surgen cuatro dimensiones. Cada una es un universo propio,
+        con su estética y su lenguaje. Todas nacen del mismo núcleo.
+      </p>
+      <div class="dimensiones-grid" role="list">
+
+        <a href="/constelaciones/" class="dim-card" data-dim="constelaciones" role="listitem">
+          <div class="dim-card-accent" aria-hidden="true"></div>
+          <span class="dim-card-num">01</span>
+          <h2 class="dim-card-title">Constelaciones</h2>
+          <p class="dim-card-sub">Terapia sistémica</p>
+          <p class="dim-card-desc">
+            Los vínculos humanos forman geometrías. Observar esos patrones
+            es el primer paso hacia la transformación.
+          </p>
+          <span class="dim-card-arrow">→</span>
+        </a>
+
+        <a href="/habitat/" class="dim-card" data-dim="habitat" role="listitem">
+          <div class="dim-card-accent" aria-hidden="true"></div>
+          <span class="dim-card-num">02</span>
+          <h2 class="dim-card-title">Hábitat</h2>
+          <p class="dim-card-sub">Territorio y naturaleza</p>
+          <p class="dim-card-desc">
+            El cuerpo es el primer territorio. La tierra, el segundo.
+            Habitar es un acto político y poético.
+          </p>
+          <span class="dim-card-arrow">→</span>
+        </a>
+
+        <a href="/informatica/" class="dim-card" data-dim="informatica" role="listitem">
+          <div class="dim-card-accent" aria-hidden="true"></div>
+          <span class="dim-card-num">03</span>
+          <h2 class="dim-card-title">Informática</h2>
+          <p class="dim-card-sub">Datos y sistemas</p>
+          <p class="dim-card-desc">
+            Los datos son el lenguaje del mundo contemporáneo.
+            Aprendo a leerlo, a construirlo, a cuestionarlo.
+          </p>
+          <span class="dim-card-arrow">→</span>
+        </a>
+
+        <a href="/gira-nada/" class="dim-card" data-dim="giranada" role="listitem">
+          <div class="dim-card-accent" aria-hidden="true"></div>
+          <span class="dim-card-num">04</span>
+          <h2 class="dim-card-title">Gira Nada</h2>
+          <p class="dim-card-sub">Poesía y existencia</p>
+          <p class="dim-card-desc">
+            El giro de las cosas que no tienen nombre.
+            Arte, vulnerabilidad, las palabras que quedan después del silencio.
+          </p>
+          <span class="dim-card-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersecciones -->
+  <section class="content-section" id="intersecciones" aria-label="Intersecciones">
+    <div class="container">
+      <div class="section-label">Donde se tocan</div>
+      <p class="xyz-description">
+        Las dimensiones no están separadas. Se intersectan, se nutren, se preguntan mutuamente.
+        XYZ existe precisamente en esos cruces.
+      </p>
+      <div class="intersecciones-grid">
+        <div class="interseccion-item">
+          <p class="interseccion-label">Constelaciones ↔ Informática</p>
+          <p class="interseccion-desc">Los sistemas humanos y los sistemas de datos comparten la misma lógica: todo es red, todo es patrón, todo se puede leer.</p>
+        </div>
+        <div class="interseccion-item">
+          <p class="interseccion-label">Hábitat ↔ Identidad</p>
+          <p class="interseccion-desc">El territorio que habitamos forma quiénes somos. La manera en que habitamos el mundo revela nuestra cosmovisión.</p>
+        </div>
+        <div class="interseccion-item">
+          <p class="interseccion-label">Gira Nada ↔ Observación</p>
+          <p class="interseccion-desc">La poesía es ciencia del interior. Nombrar lo que no tiene nombre es también una forma de análisis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-xyz">XYZ</p>
+      <p class="footer-copy">© 2025 Viviana Bautista</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/vivianabautista.xyz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@vivianabautistaxyz" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cosmos.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hábitat — territorio, naturaleza y formas de habitar. Una dimensión de XYZ por Viviana Bautista.">
+  <title>Hábitat — XYZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dimension.css">
+  <style>
+    body { background: var(--habitat-bg); }
+
+    .dim-hero-bg {
+      background:
+        radial-gradient(ellipse 75% 55% at 30% 60%, rgba(22,101,52,0.32) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 80% 20%, rgba(74,222,128,0.08) 0%, transparent 55%);
+    }
+
+    .dim-hero-title { color: #dcfce7; }
+
+    .dim-rule { background: var(--habitat-light); }
+
+    .dim-btn:hover,
+    .dim-social:hover { border-color: var(--habitat-light); }
+
+    /* Textura orgánica — grid sutil */
+    .dim-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(74,222,128,0.025) 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(74,222,128,0.025) 40px);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="dim-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="/" class="nav-logo">XYZ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/constelaciones/" class="nav-link">Constelaciones</a>
+      <a href="/habitat/" class="nav-link active">Hábitat</a>
+      <a href="/informatica/" class="nav-link">Informática</a>
+      <a href="/gira-nada/" class="nav-link">Gira Nada</a>
+      <a href="/contacto/" class="nav-link">Contacto</a>
+    </div>
+  </nav>
+
+  <section class="dim-hero">
+    <div class="dim-hero-bg"></div>
+    <div class="container">
+      <a href="/" class="dim-back">← XYZ</a>
+      <p class="dim-hero-num">Dimensión 02</p>
+      <h1 class="dim-hero-title">Hábitat</h1>
+      <p class="dim-hero-subtitle">Territorio y Naturaleza</p>
+      <p class="dim-hero-desc">
+        Habitar no es solo ocupar un espacio. Es una forma de estar en el mundo.
+        El cuerpo, la tierra, la ecología — todo es territorio
+        que podemos conocer, cuidar y transformar.
+      </p>
+      <div class="dim-tags">
+        <span class="dim-tag">Territorio</span>
+        <span class="dim-tag">Cuerpo</span>
+        <span class="dim-tag">Naturaleza</span>
+        <span class="dim-tag">Ecología</span>
+        <span class="dim-tag">Semillas</span>
+        <span class="dim-tag">Habitar</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="dim-section" style="background: var(--habitat-bg);">
+      <div class="container">
+        <hr class="dim-rule">
+        <h2 class="dim-section-title">La exploración</h2>
+        <p class="dim-section-text">
+          Esta dimensión nace de la pregunta: ¿cómo habitamos lo que somos?
+          El cuerpo es el primer ecosistema. La tierra, el segundo.
+          Explorar Hábitat es aprender a leer los territorios — internos y externos —
+          con la misma atención con que se lee un mapa.
+        </p>
+        <div class="dim-socials">
+          <a href="https://www.instagram.com/xyz.habitat/" target="_blank" rel="noopener noreferrer" class="dim-social">
+            Instagram ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dim-section" style="background: var(--habitat-bg);">
+      <div class="container">
+        <h2 class="dim-section-title">Proyectos</h2>
+        <p class="dim-section-text" style="margin-bottom: 1.5rem;">
+          Iniciativas, investigaciones y experiencias relacionadas con el habitar.
+        </p>
+        <div class="dim-projects-grid">
+          <div class="dim-project-card">
+            <p class="dim-project-title">Cartografía del cuerpo</p>
+            <p class="dim-project-meta">En proceso · 2025</p>
+            <p class="dim-project-desc">
+              Una exploración del cuerpo como primer territorio habitado.
+              Mapas somáticos y memoria corporal.
+            </p>
+          </div>
+          <div class="dim-project-card">
+            <p class="dim-project-title">Semillas y memorias</p>
+            <p class="dim-project-meta">Investigación · 2024</p>
+            <p class="dim-project-desc">
+              La semilla como metáfora de origen, latencia y expansión.
+              Ecología del tiempo.
+            </p>
+          </div>
+          <div class="dim-project-card">
+            <p class="dim-project-title">Territorio íntimo</p>
+            <p class="dim-project-meta">Proyecto continuo</p>
+            <p class="dim-project-desc">
+              Fotografía y escritura sobre los espacios que nos forman.
+              Los lugares como autobiografía.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" style="background: var(--habitat-bg);">
+    <div class="container">
+      <p class="footer-xyz">XYZ</p>
+      <p class="footer-copy">© 2025 Viviana Bautista</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/xyz.habitat/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

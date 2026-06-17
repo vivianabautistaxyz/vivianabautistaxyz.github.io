@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gira Nada — poesía, existencia y el giro de las cosas. Una dimensión de XYZ por Viviana Bautista.">
+  <title>Gira Nada — XYZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dimension.css">
+  <style>
+    body { background: var(--giranada-bg); }
+
+    .dim-hero-bg {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 50%, rgba(127,29,29,0.4) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 90% 80%, rgba(249,115,22,0.1) 0%, transparent 50%);
+    }
+
+    .dim-hero-title {
+      color: #fff1f2;
+      font-style: italic;
+    }
+
+    .dim-rule { background: var(--giranada-light); }
+
+    .dim-btn:hover,
+    .dim-social:hover { border-color: var(--giranada-light); }
+
+    /* Textura de ruido visual */
+    .dim-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    /* Citas poéticas */
+    .poema-fragmento {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.6;
+      padding: 2rem 0;
+      border-left: 1px solid rgba(249,115,22,0.3);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .gira-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      margin-top: 1.5rem;
+    }
+
+    .gira-item {
+      background: var(--giranada-bg);
+      padding: 2rem;
+    }
+
+    .gira-item-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    .gira-item-text {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+    }
+
+    @media (max-width: 768px) {
+      .gira-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="dim-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="/" class="nav-logo">XYZ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/constelaciones/" class="nav-link">Constelaciones</a>
+      <a href="/habitat/" class="nav-link">Hábitat</a>
+      <a href="/informatica/" class="nav-link">Informática</a>
+      <a href="/gira-nada/" class="nav-link active">Gira Nada</a>
+      <a href="/contacto/" class="nav-link">Contacto</a>
+    </div>
+  </nav>
+
+  <section class="dim-hero">
+    <div class="dim-hero-bg"></div>
+    <div class="container">
+      <a href="/" class="dim-back">← XYZ</a>
+      <p class="dim-hero-num">Dimensión 04</p>
+      <h1 class="dim-hero-title">Gira Nada</h1>
+      <p class="dim-hero-subtitle">Poesía · Existencia · Giro Estelar</p>
+      <p class="dim-hero-desc">
+        El giro de las cosas que no tienen nombre. Un espacio para
+        la poesía, la reflexión existencial y el arte —
+        para decir lo que no cabe en ninguna otra dimensión.
+      </p>
+      <div class="dim-tags">
+        <span class="dim-tag">Poesía</span>
+        <span class="dim-tag">Existencia</span>
+        <span class="dim-tag">Arte</span>
+        <span class="dim-tag">Vulnerabilidad</span>
+        <span class="dim-tag">Reflexión</span>
+        <span class="dim-tag">Nihilismo</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="dim-section" style="background: var(--giranada-bg);">
+      <div class="container">
+        <hr class="dim-rule">
+        <h2 class="dim-section-title">¿Qué es Gira Nada?</h2>
+        <p class="dim-section-text">
+          Gira nada es el espacio donde hablo del mundo sin filtros académicos,
+          sin el lenguaje de la terapia, sin los mapas de la ciencia.
+          Solo la voz que queda cuando se quitan todas las máscaras.
+        </p>
+        <blockquote class="poema-fragmento">
+          "Todo gira.<br>
+          Incluso la nada<br>
+          tiene su propia revolución."
+        </blockquote>
+        <div class="dim-socials">
+          <a href="https://www.instagram.com/xyz.bitacora/" target="_blank" rel="noopener noreferrer" class="dim-social">
+            Bitácora (Instagram) ↗
+          </a>
+          <a href="https://www.youtube.com/@xyz.giroestelar" target="_blank" rel="noopener noreferrer" class="dim-social">
+            Giro Estelar (YouTube) ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dim-section" style="background: var(--giranada-bg);">
+      <div class="container">
+        <h2 class="dim-section-title">Los canales</h2>
+        <div class="gira-grid">
+          <div class="gira-item">
+            <p class="gira-item-title">Bitácora</p>
+            <p class="gira-item-text">
+              El diario visual. Fragmentos, reflexiones, imágenes del proceso interior.
+              Lo que no cabe en 280 caracteres.
+            </p>
+            <a href="https://www.instagram.com/xyz.bitacora/" target="_blank" rel="noopener noreferrer"
+               style="font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-top:1rem; display:block; transition: color 0.3s;">
+              @xyz.bitacora ↗
+            </a>
+          </div>
+          <div class="gira-item">
+            <p class="gira-item-title">Giro Estelar</p>
+            <p class="gira-item-text">
+              El canal audiovisual. Videos donde el mundo se interpreta desde adentro.
+              El lenguaje cuando las palabras se vuelven imagen y sonido.
+            </p>
+            <a href="https://www.youtube.com/@xyz.giroestelar" target="_blank" rel="noopener noreferrer"
+               style="font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-top:1rem; display:block; transition: color 0.3s;">
+              @xyz.giroestelar ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dim-section" style="background: var(--giranada-bg);">
+      <div class="container">
+        <h2 class="dim-section-title">Textos recientes</h2>
+        <p class="dim-section-text" style="margin-bottom: 2rem;">
+          Próximamente se publicarán aquí textos, poemas y piezas audiovisuales.
+          Mientras tanto, el proceso vive en los canales.
+        </p>
+        <div class="dim-projects-grid">
+          <div class="dim-project-card" style="border-color: rgba(249,115,22,0.1);">
+            <p class="dim-project-title" style="font-style: italic;">Fragmento 001</p>
+            <p class="dim-project-meta">Poesía · En proceso</p>
+            <p class="dim-project-desc">Próximamente.</p>
+          </div>
+          <div class="dim-project-card" style="border-color: rgba(249,115,22,0.1);">
+            <p class="dim-project-title" style="font-style: italic;">Fragmento 002</p>
+            <p class="dim-project-meta">Reflexión · En proceso</p>
+            <p class="dim-project-desc">Próximamente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" style="background: var(--giranada-bg);">
+    <div class="container">
+      <p class="footer-xyz">XYZ</p>
+      <p class="footer-copy">© 2025 Viviana Bautista</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/xyz.bitacora/" target="_blank" rel="noopener noreferrer">Bitácora</a>
+        <a href="https://www.youtube.com/@xyz.giroestelar" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

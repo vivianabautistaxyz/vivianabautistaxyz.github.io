@@ -1,0 +1,266 @@
+/* ================================================
+   XYZ — Estilos compartidos para dimensiones
+   ================================================ */
+
+.dim-page {
+  min-height: 100vh;
+}
+
+/* ─── Hero de dimensión ─── */
+
+.dim-hero {
+  min-height: 68vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 7rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dim-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.dim-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.dim-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--s5);
+  transition: color var(--ease);
+}
+
+.dim-back:hover { color: var(--text); }
+
+.dim-hero-num {
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: var(--s2);
+}
+
+.dim-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-weight: 300;
+  line-height: 0.92;
+  margin-bottom: 0.5rem;
+}
+
+.dim-hero-subtitle {
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: var(--s3);
+}
+
+.dim-hero-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 500px;
+  line-height: 1.85;
+  margin-bottom: var(--s3);
+}
+
+.dim-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dim-tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.32rem 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ─── Contenido de dimensión ─── */
+
+.dim-section {
+  padding: var(--s6) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  z-index: 1;
+}
+
+.dim-section-title {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin-bottom: var(--s3);
+  line-height: 1.1;
+}
+
+.dim-section-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  line-height: 1.9;
+}
+
+/* ─── Línea decorativa ─── */
+
+.dim-rule {
+  width: 36px;
+  height: 1px;
+  margin: var(--s4) 0;
+  opacity: 0.4;
+}
+
+/* ─── Social links ─── */
+
+.dim-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-top: var(--s4);
+}
+
+.dim-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.65rem 1.4rem;
+  color: var(--text-muted);
+  transition: all var(--ease);
+}
+
+.dim-social:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* ─── Formulario ─── */
+
+.dim-form-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: var(--s4);
+  margin-top: var(--s3);
+  max-width: 520px;
+}
+
+.dim-input,
+.dim-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 0;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.88rem;
+  margin-bottom: var(--s3);
+  outline: none;
+  transition: border-color var(--ease);
+  display: block;
+}
+
+.dim-input:focus,
+.dim-textarea:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.dim-input::placeholder,
+.dim-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.82rem;
+}
+
+.dim-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.dim-btn {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.7rem 1.8rem;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: all var(--ease);
+}
+
+.dim-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ─── Grid de proyectos ─── */
+
+.dim-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--s2);
+  margin-top: var(--s4);
+}
+
+.dim-project-card {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: var(--s3);
+  transition: border-color var(--ease);
+}
+
+.dim-project-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.dim-project-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: var(--s1);
+}
+
+.dim-project-meta {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: var(--s2);
+}
+
+.dim-project-desc {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 768px) {
+  .dim-hero {
+    min-height: 55vh;
+    padding: 6rem 0 3.5rem;
+  }
+
+  .dim-hero-title {
+    font-size: clamp(3rem, 16vw, 5rem);
+  }
+
+  .dim-section { padding: var(--s5) 0; }
+}
