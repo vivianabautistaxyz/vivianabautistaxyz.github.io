@@ -1,0 +1,52 @@
+js/cosmos.js
+  s_ebf61fbb7adbca::t_29b04ec24d9a0c 1-192
+css/dimension.css
+  s_ebf61fbb7adbca::t_ae30952a65479f 249
+  s_ebf61fbb7adbca::t_e2714a681ed60c 72
+  s_ebf61fbb7adbca::t_850f9dc691c87c 112
+  s_ebf61fbb7adbca::t_4e7e8d5b802e02 1-71,73-111,113-248,250-266
+css/home.css
+  s_ebf61fbb7adbca::t_27b254e859f829 125
+  s_ebf61fbb7adbca::t_34a151c5cff1ec 1-124,126-342
+js/nav.js
+  s_ebf61fbb7adbca::t_7cb3a68ece7b12 1-59
+constelaciones/index.html
+  s_ebf61fbb7adbca::t_58d54178e94b85 129,136
+  s_ebf61fbb7adbca::t_e215f66425a4f4 65,70-74,81
+  s_ebf61fbb7adbca::t_5502974631d065 1-64,66-69,75-80,82-128,130-135,137-174
+habitat/index.html
+  s_ebf61fbb7adbca::t_9f2360093fb8db 1-43,45-48,54-59,61-147
+  s_ebf61fbb7adbca::t_e215f66425a4f4 44,49-53,60
+index.html
+  s_ebf61fbb7adbca::t_59aaeec228d55b 1-22,28-142,144-154,156-166,168-178,180-235
+  s_ebf61fbb7adbca::t_e215f66425a4f4 23-27,143,155,167,179
+gira-nada/index.html
+  s_ebf61fbb7adbca::t_e215f66425a4f4 91,96-100,107
+  s_ebf61fbb7adbca::t_75831e6031f808 1-78,80-90,92-95,101-106,108-219
+  s_ebf61fbb7adbca::t_58d54178e94b85 79
+contacto/index.html
+  s_ebf61fbb7adbca::t_144a49fc43e5c6 1-150,152-155,161-248
+  s_ebf61fbb7adbca::t_e215f66425a4f4 151,156-160
+css/base.css
+  s_ebf61fbb7adbca::t_6a40d7389e3142 1-8,11-238
+  s_ebf61fbb7adbca::t_fba14ad30ac277 9-10
+informatica/index.html
+  s_ebf61fbb7adbca::t_516718389af92e 1-60,62-65,71-76,78-163,165-183
+  s_ebf61fbb7adbca::t_e215f66425a4f4 61,66-70,77,164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "ef793c54c9754eb54b9d1a246721ba89093b32ee",
+  "prompts": {},
+  "sessions": {
+    "s_ebf61fbb7adbca": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "30f6beb4-3f5b-4bfa-8669-806acfd07bad",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Viviana Bautista <viviana@gmail.com>"
+    }
+  }
+}
